@@ -10631,8 +10631,8 @@ type SelectObjectContentEventStream struct {
 // is called.
 //
 //	es := NewSelectObjectContentEventStream(func(o *SelectObjectContentEventStream){
-//	    es.Reader = myMockStreamReader
-//	    es.StreamCloser = myMockStreamCloser
+//	    o.Reader = myMockStreamReader
+//	    o.StreamCloser = myMockStreamCloser
 //	})
 func NewSelectObjectContentEventStream(opts ...func(*SelectObjectContentEventStream)) *SelectObjectContentEventStream {
 	es := &SelectObjectContentEventStream{
